@@ -1,0 +1,32 @@
+/* Styling for the dropdown menu */
+.menu {
+    position: absolute;
+    top: -100px;
+    right: 10px;
+    background-color: rgb(188, 3, 3); /* Change this to the desired background color for the menu */
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+    z-index: -9999;
+}
+
+/* Show the menu when the "menu" class is added */
+.menu.show {
+    display: block;
+}
+
+/* Styling for the menu buttons */
+.menu button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Hover effect for menu buttons */
+.menu button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}

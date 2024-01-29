@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covalience Chat Interface</title>
+    <link rel="icon" href="Images/download.png">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <script>
+        const redirectToLogin = () => {
+            window.location.href = "login.html";
+        }
+        const redirectToSignup = () => {
+            window.location.href = "signup.html"
+        }
+    </script>
+    <main>
+        <div class="container">
+            <div id="logo">
+                <img src="./Images/download.png">
+            </div>
+            <div id="text">
+                <p>
+                    <span>
+                        Welcome to Covalience Chat Interface
+                    </span>
+                    <span>
+                        Log in with your Covalience account to continue.
+                    </span>
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="redirectToLogin()">Log in</button>
+                <button onclick="redirectToSignup()">Sign up</button>
+            </div>
+            <div class="fixed">
+                <p>
+                    <a href="term.html" style="text-decoration: none; color: gray;">Terms of use</a> |
+                    <a href="privacy.html" style="text-decoration: none; color: gray;">Privacy policy</a>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

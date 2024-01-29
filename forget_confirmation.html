@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password Conformiation Page</title>
+    <link rel="icon" href="Images/download.png">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 25px;
+            background-color: #4caa0d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button:hover {
+            background-color: #03571c;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #logo {
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+        .loginContent p {
+            width: 350px;
+            height: auto;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            padding-bottom: 24px;
+            font-size: 20px;
+        }
+
+        /* Styling for footer text */
+        footer p {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="logo">
+            <img src="./Images/download.png" style="width: 50px; height: 50px;">
+            <div class="loginContent">
+                <div class="emailIcon">
+                    <img src="./Images/email.png" alt="email_sent" style="width: 110px; margin-bottom: 20px;margin-top: 110px;">
+                    <h2 style="padding-bottom: 15px; font-size: 32px;">Check your Email.</h2>
+                    <p>Please check your email id for instructions to reset your password.</p>
+                    <button onclick="window.location.href='forgetpassword.html'">Resend Email</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <a href="term.html" style="text-decoration: none; color: gray;">Terms of use</a> |
+            <a href="privacy.html" style="text-decoration: none; color: gray;">Privacy policy</a>
+        </p>
+    </footer>
+</body>
+
+</html>

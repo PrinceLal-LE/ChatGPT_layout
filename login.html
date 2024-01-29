@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface Login Page</title>
+    <link rel="icon" href="Images/download.png">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+
+<body>
+    <main>
+        <!-- Logo -->
+        <div id="logo">
+            <img src="./Images/download.png" style="width: 50px; height: 50px;">
+            <div class="loginContent">
+                <div>
+                    <h1>Welcome back</h1>
+                </div>
+                <!-- Email Validation -->
+
+            <div id="inputBox">
+
+                <div class="input-container">
+                    <input type="email" name="emailAddress" id="emailId" placeholder=" ">
+                    <label for="emailId">Email Address</label>
+                    <button class="editButton" id="editEmailBtn" style="display: none;" onclick="editEmailAddress()">Edit</button>                </div>
+                <span id="errorText"></span>
+            </div>
+                
+                <!-- Password input (initially hidden) -->
+                <div id="passwordContainer" style="display: none;">
+                    <div class="input-container">
+                        <input type="password" name="password" id="password" placeholder=" ">
+                        <label for="password">Password</label>
+                        <span class="password-toggle" onclick="togglePasswordVisibility()"></span>
+                    </div>
+                    <span id="errorTextPassword"></span>
+                    <p>
+                        <a href="forgetpassword.html" >Forget Password ?</a>
+                    </p>
+                </div>
+                
+                <button id="continueButton">Continue</button>
+                <div id="signup">
+                    <p>Don't have an account?
+                        <button onclick="openSignUP()">SignUp</button>
+                    </p>
+                </div>
+                <!-- <hr> -->
+                <div id="hrOrContainer" class="hr-container">
+                    <hr class="hr-line">
+                    <span class="hr-text">OR</span>
+                    <hr class="hr-line">
+                </div>
+            </div>
+            <!-- Features in Login page -->
+            <div class="loginFeatures" id="loginFeaturesButton">
+
+                <!-- Google account login -->
+                <button id="loginWithGoogleAccount" class="featureButton">
+                    <img src="./Images/google-image.jpg" alt=""
+                        style="width: 40px; height: 30px; float: left; padding-left: 10px; ">
+                    <span style="text-align: left; justify-content: left; margin-left: 10px; font-size: 20px; ">Continue
+                        with Google</span>
+                </button>
+
+                <!-- Microsoft account login -->
+                <button id="loginWithMicrosoftAccount" class="featureButton">
+                    <img src="./Images/Microsoft_logo.svg.png" alt=""
+                        style="width: 40px; height: 30px; float: left; padding-left: 10px; ">
+                    <span style="text-align: left; justify-content: left; margin-left: 10px; font-size: 20px; ">Continue
+                        with Microsoft Account</span>
+                </button>
+
+                <!-- Apple Account login -->
+                <button id="loginWithAppleAccount" class="featureButton">
+                    <img src="./Images/Apple.png" alt=""
+                        style="width: 40px; height: 30px; float: left; padding-left: 10px; ">
+                    <span style="text-align: left; justify-content: left; margin-left: 10px; font-size: 20px; ">Continue
+                        with Apple </span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="term.html" style="text-decoration: none; color: gray;">Terms of use</a> | 
+            <a href="privacy.html" style="text-decoration: none; color: gray;">Privacy policy</a>
+        </p>
+    </footer>
+    </div>
+    <script src="JS/login.js">
+    </script>
+</body>
+
+</html>

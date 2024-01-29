@@ -1,0 +1,523 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* styling for container */
+.container {
+    display: flex;
+}
+
+/* Styliing for history side */
+.leftSide {
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(54, 53, 53);
+    position: relative;
+    /* float: left; */
+    display: flex;
+    /* Add this line to use flexbox layout */
+    flex-direction: column;
+    /* Stack the child elements vertically */
+    justify-content: space-between;
+}
+
+/* Styling New Chat button */
+#newChatButton {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    gap: 10px;
+    width: 70%;
+    border: 01px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#newChatButton:hover {
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* styling for toggle button */
+#toggleButton {
+    width: 25%;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    /* display: none; */
+}
+
+#toggleButton:hover {
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    transition: width 0.3s ease;
+}
+
+#showLeftSideButton {
+    width: 70px;
+    padding: 05px;
+    background-color: white;
+    margin: 10px 0px 0px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+#showLeftSideButton:hover {
+    background-color: gray;
+}
+
+/* Add this CSS to expand container3 */
+.expandedContainer {
+    width: 100%;
+}
+
+.leftSide.hidden {
+    width: 0;
+}
+
+
+.userAccountSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for Upgrade to plus button */
+.upgradeAccount {
+    /* margin-bottom: 35px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+/* Styling for Upgrade to plus button */
+.upgradeAccount button {
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0px 10px;
+    gap: 10px;
+    /* position: absolute; */
+    left: 10px;
+}
+
+/* Styling for the new image */
+.upgradeAccount button img:last-child {
+    margin-left: auto;
+}
+
+/* Styling of uprade to plus button when it is hovered. */
+.upgradeAccount button:hover {
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* Styling for chatting area */
+.container3 {
+    width: 75%;
+    background-color: transparent;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.chattingArea {
+    height: 80vh;
+    overflow: auto;
+}
+
+.footerArea {
+    display: flex;
+    width: calc(100% - 450px);
+    bottom: 0;
+    margin: 10px 225px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.regenerateButtonArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#regenerateButton {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px 10px;
+    gap: 10px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#regenerateButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    outline: none;
+    border: solid;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.bottomInputArea {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#input-box {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    height: 100px;
+    resize: none;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 30px #999;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    padding: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    padding-top: 10px;
+
+}
+
+.inputText {
+    position: relative;
+}
+
+#search-button {
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    right: 0;
+    height: 30px;
+    line-height: 20px;
+    font-size: 12px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.userMenu {
+    margin-bottom: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    background-color: black;
+    border-radius: 10px;
+    display: none;
+    padding: 0;
+    list-style: none;
+    width: calc(100% - 20px);
+    justify-content: center;
+}
+
+/* Show the menu when the "show" class is added */
+.userMenu.show {
+    display: block;
+}
+
+.userMenu button {
+    color: white;
+    background-color: transparent;
+    margin: 10px 0px;
+}
+
+.userMenu button:hover {
+    color: white;
+    background-color: gray;
+    border-radius: 0px;
+}
+
+.userAccountSectionButton {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* The same CSS code as before */
+/* Style the pop-up window */
+.popUpWindow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popUpContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 750px;
+    height: 350px;
+}
+
+/* Style the custom close button */
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Grid layout for the pop-up content */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* Divide the content into two parts with a line in between */
+    grid-gap: 20px;
+    /* Adjusted grid gap to create space for the line */
+    margin-top: 10px;
+    height: calc(100% - 50px);
+}
+
+.gridLine {
+    border-right: 1px solid #e00909;
+    /* Add a line between the two parts */
+    grid-column: 2 / span 1;
+    /* Position the line in the middle */
+    padding-top: 10px;
+    /* Add padding to make the line more visible */
+}
+
+.gridItem {
+    text-align: center;
+}
+
+.freePlanButton {
+    background-color: #ccc;
+    color: #888;
+    border: 1px solid #888;
+    cursor: not-allowed;
+}
+
+.gridItem ul li {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.plusPlanButton {
+    background-color: #4caa0d;
+    color: white;
+    cursor: pointer;
+
+}
+
+.plusPlanButton:hover {
+    background-color: #03571c;
+}
+
+/* Style the tooltip container */
+.tooltipContainer {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the tooltip */
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(5px, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Create a triangle arrow for the tooltip */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltipContainer:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltipContainer .tooltip {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.welcomeMessage {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: none;
+}
+
+
+
+#chatArea {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.questionList {
+    width: 100%;
+}
+
+.questionList button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.questionList button:hover {
+    background-color: #736d6d;
+    border-radius: 10px;
+}
+
+.questionList button:active {
+    background-color: #007bff;
+}
+
+.chatList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(206, 200, 200);
+
+}
+
+.chatList li {
+    margin: 0px 250px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#chattingArea {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chattingArea ul {
+    background-color: reds;
+}
+
+.chattingArea li {
+    list-style: none;
+    padding: 10px;
+    background-color: #736d6d;
+    color: white;
+
+}
